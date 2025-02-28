@@ -1,0 +1,646 @@
+* {
+  box-sizing: border-box;
+}
+p{
+  font-family: Inter;
+}
+
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: auto;
+  padding: auto;
+}
+
+header {
+  background-color: #2f0000;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.titulo {
+  margin: 0;
+  width: 600px;
+}
+.logo {
+  font-weight: bold;
+}
+.logologo{
+  width: 200px;
+}
+
+.barra-navegacion {
+  background-color: #ba7f00;
+  padding: 10px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;              /*Modulo felx box solo se utiliza en la seccion nav*/
+  justify-content: space-evenly;
+}
+.barra-navegacion ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+.barra-navegacion li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 15px 20px;
+  font-family: Knewave;
+  font-style: normal;
+  font-size: 25px;
+}
+
+main {
+  display: flex;
+  background-image: url(Imagenes/Fondo\ fondo.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  padding: 5px;
+  background-size: cover;
+}
+
+.descripcion {
+  min-width: 300px;
+  height: 1740px;
+  padding: 10px;
+  background-color: #ce9e019d;
+  color: #ffffff;
+  margin-top: 60px;
+}
+
+.recuadros {
+  display: inline-block;
+  padding: 10px;
+  width: auto;
+  height: auto;
+  margin-top: 60px;
+}
+
+.recuadroimg {
+  float: left; 
+  min-width: 150px;              
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  padding: 10px;   
+}
+.recuadrotxt {
+  float: right; 
+  min-width: 150px;        
+  height: 560px;           
+  display: block;
+  align-items: center;
+  justify-content: center;
+  background-color:#000000ab; 
+  color: #ffffff;
+  padding: 10px;
+}
+.recuadroimg2 {
+  float: right; 
+  min-width: 150px;                 
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  padding: 10px;
+}
+.recuadrotxt2 {
+  float: right; 
+  min-width: 150px;        
+  height: 670px;           
+  display: block;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000ab;  
+  color: #ffffff;
+  padding: 10px;
+}
+.recuadroimg3 {
+  float: left; 
+  min-width: 150px;             
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.recuadrotxt3 {
+  float: right; 
+  min-width: 150px;        
+  height: 660px;           
+  display: block;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000ab;  
+  color: #ffffff;
+  padding: 10px;
+}
+.recuadroimg4 {
+  float: right; 
+  min-width: 150px;               
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.recuadrotxt4 {
+  float: right; 
+  min-width: 150px;        
+  height: 580px;           
+  display: block;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000ab;  
+  color: #ffffff;
+  padding: 10px;
+}
+
+footer {
+  height: 200px;
+  text-align: center;
+  padding: 10px;
+  background-color: #2f0000;
+}
+.Redes{
+  width: auto;
+  height: auto;
+  padding: 10px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;              /*Modulo felx box solo se utiliza en la seccion nav*/
+  justify-content: space-evenly;
+}
+.Redes ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+.Redes a {
+  text-decoration: none;
+  color: #2f0000;
+  padding: 15px 20px;
+}
+.Redes li img {
+  padding: 15px 20px;
+  width: 120px;
+  height: auto;
+}
+
+@media (max-width: 720px) {
+  .descripcion {
+    width: 30%;
+  }
+  .recuadro {
+    width: calc(50% - 10px); 
+  }
+  .titulo {
+    margin: 0;
+    width: 300px;
+  }
+  .logologo{
+    margin: 0;
+    width: 120px;
+  }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: auto;
+    padding: 0 auto;
+  }
+  
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .barra-navegacion {
+    background-color: #000000;
+    padding: 10px;
+    margin: 0 auto;
+    width: 250px;
+    position: absolute;
+    z-index: 1;
+    align-items: left;
+  }
+  .barra-navegacion ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    display: none;
+  }
+  .barra-navegacion li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+    left: 10px;
+    top: 10px;
+    color: #ba7f00;
+    position: absolute;
+
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ba7f00;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    border: #2f0000 solid 4px;
+}
+
+.nav-links li {
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.nav-links.show {
+    display: flex;
+}
+  
+  
+  main {
+    display: flex;
+    background-image: url(Imagenes/Fondo\ fondo.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    padding: 10px;
+  }
+  
+  .descripcion {
+    min-width: 200px;
+    height: 2560px;
+    padding: 10px;
+    color: #ffffff;
+  }
+  
+  .recuadros {
+    display: inline-block;
+    padding: 10px;
+    width: auto;
+    height: auto;
+  }
+  
+  .recuadroimg {
+    float: left; 
+    min-width: 50px;              
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 10px;   
+  }
+  .recuadroimg img{
+    width: 220px;
+  }
+  .recuadrotxt {
+    float: right; 
+    min-width: 150px;        
+    height: 700px;           
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color:#000000ab; 
+    color: #ffffff;
+    padding: 10px;
+  }
+  .recuadroimg2 {
+    float: right; 
+    min-width: 50px; 
+    height: auto;             
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 10px;
+  }
+  .recuadroimg2 img{
+    width: 220px;
+  }
+  .recuadrotxt2 {
+    float: right; 
+    min-width: 150px;        
+    height: 880px;           
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000ab;  
+    color: #ffffff;
+    padding: 10px;
+  }
+  .recuadroimg3 {
+    float: left; 
+    min-width: 50px; 
+    height: auto;             
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 10px;
+  }
+  .recuadroimg3 img{
+    width: 220px;
+  }
+  .recuadrotxt3 {
+    float: right; 
+    min-width: 150px;        
+    height: 810px;           
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000ab;  
+    color: #ffffff;
+    padding: 10px;
+  }
+  .recuadroimg4 {
+    float: right; 
+    min-width: 50px; 
+    height: auto;             
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 10px;
+  }
+  .recuadroimg4 img{
+    width: 220px;
+  }
+  .recuadrotxt4 {
+    float: right; 
+    min-width: 150px;        
+    height: 790px;           
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000ab;  
+    color: #ffffff;
+    padding: 10px;
+  }
+  
+  
+  footer {
+    height: 200px;
+    text-align: center;
+    padding: 10px;
+    background-color: #2f0000;
+  }
+  .Redes li img {
+    padding: 15px 20px;
+    width: 110px;
+    height: auto;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  
+  
+  
+  main {
+    flex-direction: column;
+  }
+  .descripcion {
+    width: 100%;
+    border-right: none; 
+    height: 1200px;
+  }
+
+  .titulo {
+    margin: 0;
+    width: 300px;
+  }
+  .logologo{
+    margin: 0;
+    width: 120px;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 5700px;
+    padding: 0 auto;
+  }
+  
+  header {
+    background-color: #2f0000;
+  }
+  
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .barra-navegacion {
+    background-color: #000000;
+    padding: 10px;
+    margin: 0 auto;
+    width: 250px;
+    position: absolute;
+    z-index: 1;
+    align-items: left;
+  }
+  .barra-navegacion ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    display: none;
+  }
+  .barra-navegacion li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px 20px;
+    font-size: 18px;
+  }
+
+  .menu-toggle {
+    display: block;
+    left: 10px;
+    top: 10px;
+    color: #ba7f00;
+    position: absolute;
+
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ba7f00;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    border: #2f0000 solid 4px;
+}
+  
+  
+  main {
+    display: flex;
+    background-image: url(Imagenes/Fondo\ fondo.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    padding: 10px;
+  }
+  
+  .recuadros {
+    display: inline-block;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    margin-top: 0px;
+  }
+  
+  .recuadroimg {
+    float: left; 
+    min-width: 50px;              
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 10px;   
+  }
+  .recuadroimg img{
+    width: 220px;
+  }
+  .recuadrotxt {
+    float: right; 
+    min-width: 150px;        
+    height: 820px;           
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color:#000000ab; 
+    color: #ffffff;
+    padding: 10px;
+  }
+  .recuadroimg2 {
+    float: right; 
+    min-width: 50px; 
+    height: auto;             
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 10px;
+  }
+  .recuadroimg2 img{
+    width: 220px;
+  }
+  .recuadrotxt2 {
+    float: right; 
+    min-width: 150px;        
+    height: 980px;           
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000ab;  
+    color: #ffffff;
+    padding: 10px;
+  }
+  .recuadroimg3 {
+    float: left; 
+    min-width: 50px; 
+    height: auto;             
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 10px;
+  }
+  .recuadroimg3 img{
+    width: 220px;
+  }
+  .recuadrotxt3 {
+    float: right; 
+    min-width: 150px;        
+    height: 1000px;           
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000ab;  
+    color: #ffffff;
+    padding: 10px;
+  }
+  .recuadroimg4 {
+    float: right; 
+    min-width: 50px; 
+    height: auto;             
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 10px;
+  }
+  .recuadroimg4 img{
+    width: 220px;
+  }
+  .recuadrotxt4 {
+    float: right; 
+    min-width: 150px;        
+    height: 840px;           
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000ab;  
+    color: #ffffff;
+    padding: 10px;
+  }
+  
+  
+
+  footer {
+    height: 200px;
+    text-align: center;
+    padding: 10px;
+    background-color: #2f0000;
+  }
+  .Redes{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;              /*Modulo felx box solo se utiliza en la seccion nav*/
+    justify-content: space-evenly;
+    top: 40px;
+    position: relative;
+  }
+  .Redes ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  .Redes a {
+    text-decoration: none;
+    color: #2f0000;
+    padding: 5px 10px; 
+  }
+  .Redes li img {
+    padding: 5px 10px;
+    width: 70px;
+    height: auto;
+  }
+}
